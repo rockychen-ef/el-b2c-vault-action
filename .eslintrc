@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module"
+  },
+  "env": {
+      "es6": true,
+      "mocha": true,
+      "node": true,
+      "commonjs": true
+  },
+  "rules": {
+    "semi": ["warn", "never"],
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "space-before-function-paren": ["warn", "always"]
+  }
+}

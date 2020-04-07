@@ -1,0 +1,31 @@
+name: 'Vault action'
+description: 'Read a secret from Vault and output a file'
+branding:
+  icon: 'alert-triangle'  
+  color: 'red'
+inputs:
+  vault-version:
+    description: 'Vault version'
+    required: true
+    default: '1.3.4'
+  url:
+    description: 'Vault URL'
+    required: true
+  github-token:
+    description: 'GitHub token for login'
+    required: true
+  secret-path:
+    description: 'Secret path'
+    required: true
+  secret-field:
+    description: 'Secret field'
+    required: true
+  output-dir:
+    description: 'Output directory'
+    required: true
+  output-file:
+    description: 'Output file'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
