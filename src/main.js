@@ -17,7 +17,7 @@ async function main () {
   await exec.exec(`mkdir -p ${home}`)
 
   await exec.exec(`wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip -O ${home}/vault_${VAULT_VERSION}_linux_amd64.zip`)
-  await exec.exec(`unzip ${home}/vault_${VAULT_VERSION}_linux_amd64.zip -d ${home}/`)
+  await exec.exec(`unzip -o ${home}/vault_${VAULT_VERSION}_linux_amd64.zip -d ${home}/`)
   core.addPath(`${home}`)
 
   process.env['VAULT_ADDR'] = URL
