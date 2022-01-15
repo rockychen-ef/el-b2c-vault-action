@@ -13,7 +13,7 @@
   "dependencies": {
     "@actions/core": "^1.0.0",
     "esm": "^3.2.25",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "@actions/core": "^1.0.0",
@@ -21,6 +21,6 @@
     "eslint": "^6.4.0",
     "mocha": "^6.2.2",
     "npx": "^10.2.0",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.5"
   }
 }
